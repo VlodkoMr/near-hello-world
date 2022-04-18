@@ -49,7 +49,7 @@ impl Welcome {
     // self.records.get(&account_id) is not yet defined.
     // Learn more: https://doc.rust-lang.org/book/ch06-02-match.html#matching-with-optiont
     pub fn get_greeting(&self, account_id: String) -> String {
-        format!("Hello {}", account_id)
+        format!("Hello {}!", account_id)
         // language = "en";
         //
         // match language: Option<String> {

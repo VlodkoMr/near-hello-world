@@ -15,7 +15,7 @@ document.querySelector('form').onsubmit = async (event) => {
         let greeting = await window.contract.get_greeting({
             account_id: nameButton.value
         });
-        resultBlock.innerHTML = `<b>${greeting}</b>, I'm NEAR blockchain.`;
+        resultBlock.innerHTML = `<b>${greeting}</b> I'm NEAR blockchain.`;
     } catch (e) {
         alert('Something went wrong!');
     } finally {
